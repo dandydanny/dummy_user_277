@@ -1,0 +1,30 @@
+Tasks to complete
+
+Create the database
+  rake db:create
+
+Create a model User
+  rake generate:model NAME=User
+
+Create a migration
+  rake generate:migration NAME=create_users
+
+  add fields to migration file using create_table
+      t.string :user_name
+      t.string :first_name
+      t.string :last_name
+      t.string :email
+      t.string :password
+
+Run shotgun. If there's weird error, try killall shotgun, then rerun shotgun  
+
+Create and populate our controller index.rb with routes
+
+Create the routes and views:
+  Welcome: get '/',     index.erb
+      index.erb will have a login or create account(get the form?) choice/form or route?
+  Login:   get '/login'   login.erb
+  Secret page   get '/secret'  secret.erb
+  Create an account  post '/create_account' create_account.erb, only post
+
+
